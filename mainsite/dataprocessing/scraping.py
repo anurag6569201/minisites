@@ -1,7 +1,6 @@
-# beautiful soup and HTMLsession used
-
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
+import pandas as pd
 
 def extract_data(url):
     session = HTMLSession()
@@ -40,9 +39,9 @@ def calculate_total(data):
     return totals
 
 urls = [
-    'https://blazecare.vercel.app/',
-    'https://sparklife.vercel.app/',
     'https://zencare.vercel.app/',
+    'https://sparklife.vercel.app/',
+    'https://blazecare.vercel.app/',
 ]
 
 all_data = []
@@ -52,5 +51,6 @@ for url in urls:
 
 total_data = calculate_total(all_data)
 
-for disease, info in total_data.items():
-    print(f"{disease}: {info['cases']} cases, Symptoms: {info['symptoms']}, Preventives: {info['preventives']}")
+df = pd.DataFrame(total_data).transpose()
+
+df.to_excel('disease_data.xlsx', index_label='Disease')
