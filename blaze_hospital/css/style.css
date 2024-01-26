@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Philosopher&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+    scroll-padding: 4em;
+    font-family: 'Philosopher', sans-serif;
+}
+hr{
+    display: none;
+}
+html,body{
+    font-size: 10px;
+    overflow-x: hidden;
+    background-color: #f5d1d1;
+}
+body::-webkit-scrollbar{
+    width: 0px;
+}
+html::-webkit-scrollbar{
+    width: 0px;
+}
+.bg-dark{
+    background:#caa1a1!important;
+    backdrop-filter: blur(10px);
+}
+.bg-light{
+    background-color: #f5d1d1!important;
+}
+.navbar{
+    font-size: 2em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    z-index: 1000;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-brand img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+.navbar-brand span{
+    font-size: 3em;
+    font-weight: 700;
+}
+.bg_image{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-image: url(../image/blaze.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    padding: 4em;
+    background-attachment: fixed;
+}
+.bg_image h1{
+    width: 100%;
+    font-size: 5em;
+    font-weight: 700;
+    color: #09362e;
+}
+.bg_image span{
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #ffffff;
+}
+#parallel_text #hospital_addres{
+    margin-top: .3em;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #e92428;
+}
+#contact form button,
+#blog .card__content a,
+.bg_image button{
+    background-color: #ffffff;
+    font-size: .5em;
+    padding: .4em 1em;
+    border: none;
+    border-radius: 5em;
+    color: #caa1a1;
+    font-weight: 800;
+    border: 2px solid #caa1a1;
+    transition: 0.4s;
+}
+#contact form button:hover,
+#blog .card__content a:hover,
+.bg_image button:hover{
+    border: 2px solid #ffffff;
+    background-color: #caa1a1;
+    color: #ffffff;
+}
+.custom-shape-divider-bottom-1700989997 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1700989997 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 92px;
+}
+
+.custom-shape-divider-bottom-1700989997 .shape-fill {
+    fill: #caa1a1;
+}
+/* about us */
+#about{
+    background-color: #f5d1d1;
+}
+
+/* data */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 2em;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+th {
+    background-color: #caa1a1;
+    color: white;
+    text-align: center;
+}
+.table tr td:nth-child(2){
+    text-align: center;
+}
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #caa1a1;
+}
+tr:nth-child(even):hover {
+    background-color: #caa1a1;
+}
+#data-section{
+    position: relative;
+}
+.mt-4{
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+/* facilities */
+#facilities{
+    position: relative;
+}
+#data-section h1,
+#about h2,
+#contact h2,
+#blog h2,
+#facilities h2{
+    text-align: center;
+    color: #09362e;
+    font-size: 5em;
+    padding: .8em;
+    font-weight: 700;
+}
+.custom-shape-divider-top-1700990579 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1700990579 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 46px;
+}
+
+.custom-shape-divider-top-1700990579 .shape-fill {
+    fill: #caa1a1;
+}
+#blog .row,
+.card-deck{
+    font-size: 2em;
+}
+.card {
+  position: relative;
+  cursor: pointer;
+  margin-top: 2em;
+  max-width: 400px;
+  width: 300px;
+  min-height: 280px;
+  background-color: #597e77;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #caa1a1;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card img{
+  width: 400px;
+  min-height: 300px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px 6px #caa1a1;
+}
+
+.card__content {
+  position: absolute;
+  border-radius:10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color:#caa1a1;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card__content p:nth-child(1){
+  color:white;
+  font-weight:700;
+}
+.card__description,
+.card_detail{
+  color:rgba(255,255,255,0.8);
+  font-weight:300;
+}
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+.card-deck{
+    align-items: center;
+}
+.card-deck .card img{
+    border-radius: 1em;
+}
+.card-deck .card h1{
+    color: white;
+    font-weight: 800;
+}
+
+/* blogs */
+#blog{
+    margin-top: 2em;
+    background-color: #f5d1d1;
+}
+#blog .row{
+    padding-bottom: 1em!important;
+    padding-top: 1em!important;
+}
+#blog .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#blog .card{
+    margin-top: 0;
+}
+#blog img{
+    border-radius: 1em;
+}
+#blog .row .card a{
+    font-size: .7em;
+}
+/* contact */
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5d1d1;
+    position: relative;
+    padding-bottom: 5em;
+}
+#contact .container{
+    max-width: 60em
+}
+#about p,
+#contact p{
+    text-align: left;
+    font-size: 2em;
+    gap: 1em;
+}
+#contact form{
+    font-size: 2em;
+}
+#contact textarea,
+#contact input{
+    font-size: 1em;
+    border-radius: .5em;
+}
+#contact form button{
+    font-size: .7em;
+}
+.custom-shape-divider-bottom-1700995859 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1700995859 svg {
+    position: relative;
+    display: block;
+    width: calc(289% + 1.3px);
+    height: 66px;
+}
+
+.custom-shape-divider-bottom-1700995859 .shape-fill {
+    fill: #caa1a1;
+}
+.disease_text {
+    padding-top: 1em!important;
+}
+/* footer */
+footer{
+    border: none;
+    font-size: 2em;
+    text-shadow: 0 0 0.5em #8fc5bb;
+}
+/* starting animation */
+.bg_image h1{
+    animation-name: maintext;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes maintext {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+/* hover styles */
+
+/* responsiveness */
+@media (max-width: 575px) {
+    html,body{
+        font-size: 8px;
+    }
+    .bg_image{
+        background-attachment: scroll;
+    }
+}
+

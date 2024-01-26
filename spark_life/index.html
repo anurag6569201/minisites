@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ZenCare-Hub</title>
+    <link rel="icon" href="image/zencare_hub.png">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="image/spark_life.png" alt=""><span>Spark-Life</span></a>
+    </nav>
+    <div class="bg_image">
+        <h1 id="parallel_text">Spark-Life<br>
+            <span>Uplifting Lives with Care</span><br>
+            <button >Take Appoinment</button>
+        </h1>
+        <div class="custom-shape-divider-bottom-1700989997">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- data section -->
+    <section id="data-section">
+        <div class="custom-shape-divider-top-1700990579">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <h1 class="disease_text mt-4 mb-4">Disease Information</h1>
+
+            <!-- Dynamic disease table -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Disease Name</th>
+                        <th scope="col">Cases</th>
+                        <th scope="col">Symptoms</th>
+                        <th scope="col">Preventive Measures</th>
+                    </tr>
+                </thead>
+                <tbody id="disease-table-body"></tbody>
+            </table>
+
+        </div>
+    </section>
+
+
+    <!-- Facilities Section -->
+
+    <section id="facilities" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Facilities</h2>
+
+            <div class="card-deck">
+                <!-- Facility Card 1 -->
+                <div class="card">
+                        <p style="position: absolute; bottom: 0;text-align: center;background-color: rgba(255,255,255,0.5);color:#154a40; width: 100%;" class="card__title">Specialized Units</p>
+                        <img src="image/fac1.jpeg">
+                    <div class="card__content">
+                        <p class="card__title">Specialized Units</p><br>
+                        <p class="card_detail">
+                            Advanced units for specialized care, including intensive care and specialized treatments.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Facility Card 2 -->
+                <div class="card">
+                        <p style="position: absolute; bottom: 0;text-align: center;background-color: rgba(255,255,255,0.5);color:#154a40; width: 100%;" class="card__title">Advanced Technology</p>
+                        <img src="image/fac2.jpeg">
+                    <div class="card__content">
+                        <p class="card__title">Advanced Technology</p><br>
+                        <p class="card_detail">Cutting-edge medical technology for precise diagnostics and innovative
+                            treatment options.</p>
+                    </div>
+                </div>
+
+                <!-- Facility Card 3 -->
+                <div class="card">
+                    <p style="position: absolute; bottom: 0;text-align: center;background-color: rgba(255,255,255,0.5);color:#154a40; width: 100%;" class="card__title">Patient Rooms</p>
+                    <img src="image/fac3.jpeg">
+                    <div class="card__content">
+                        <p class="card__title">Patient Rooms</p><br>
+                        <p class="card_detail">Well-equipped rooms designed to provide comfort and a
+                            healing
+                            environment for our patients.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Add more cards as needed -->
+
+        </div>
+    </section>
+
+
+    <!-- Health and Wellness Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <h2 class="text-center mb-4">Health & Wellness Blog</h2>
+
+            <div class="row">
+                <!-- Blog Post 1 -->
+                <div class="card mb-4">
+                    <div style="position: relative;"  class="card blogcard">
+                        <p style="position: absolute; bottom: 0;text-align: center;background-color: rgba(255,255,255,0.5);color:#154a40; width: 100%;" class="card__title">Boost Your Immunity</p>
+                        <img src="image/blog1.jpeg">
+                        <div class="card__content">
+                            <p class="card__title">Boost Your Immunity Naturally</p>
+                            <p class="card__description">Discover simple yet effective ways to strengthen your
+                                immune system and
+                                stay healthy.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="card mb-4">
+                    <div style="position: relative;" class="card">
+                        <p style="position: absolute; bottom: 0;text-align: center;background-color: rgba(255,255,255,0.5);color:#154a40; width: 100%;" class="card__title">Mindfulness Meditation</p>
+                        <img src="image/blog2.jpeg">
+                        <div class="card__content">
+                            <p class="card__title">Mindfulness Meditation</p>
+                            <p class="card__description">Explore the benefits of mindfulness meditation and how it can
+                                help
+                                alleviate stress in your daily life.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Blog Post 3 -->
+                 <div class="card mb-4">
+                    <div style="position: relative;"  class="card blogcard">
+                        <p style="position: absolute; bottom: 0;text-align: center;background-color: rgba(255,255,255,0.5);color:#154a40; width: 100%;" class="card__title">Boost Your Immunity</p>
+                        <img src="image/blog1.jpeg">
+                        <div class="card__content">
+                            <p class="card__title">Boost Your Immunity Naturally</p>
+                            <p class="card__description">Discover simple yet effective ways to strengthen your
+                                immune system and
+                                stay healthy.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more blog posts as needed -->
+
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <form>
+                <!-- Add form fields here -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input placeholder="Enter Name" type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input placeholder="Enter Email" type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea placeholder="Enter Message" class="form-control" id="message" name="message"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="custom-shape-divider-bottom-1700995859">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        
+        <div class="container">
+            <p>&copy; 2023 Spark-Life Hospital</p>
+            <p class="mb-0">Designed and crafted with <img width="48" height="48" src="https://img.icons8.com/color/48/hearts.png" alt="hearts"/> by <span class="text-dark">Anurag Singh</span></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
